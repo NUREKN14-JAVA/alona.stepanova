@@ -1,6 +1,6 @@
 <project name="usermanagement" basedir="." default="test">
-    <property name="main-java-dir" value="$(basedir)/src/nure.ua.hulko.daria/main/java"/>
-    <property name="test-java-dir" value="$(basedir)/src/nure.ua.hulko.daria/test/java"/>
+    <property name="main-java-dir" value="$(basedir)/src/nure.ua.alona.stepanova/main/java"/>
+    <property name="test-java-dir" value="$(basedir)/src/nure.ua.alona.stepanova/test/java"/>
     <property name="build-dir" value="$(basedir)/bin"/>
 
     <target name="clean">
@@ -24,7 +24,7 @@
                     </pathelement>
                 </classpath>
                 <formatter type="plain"/>
-                <test name="nure.ua.hulko.daria.test.java.UserTest"></test>
+                <test name="nure.ua.alona.stepanova.test.java.UserTest"></test>
             </junit>
     </target>
 </project>
