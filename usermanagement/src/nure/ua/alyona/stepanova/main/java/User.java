@@ -3,9 +3,6 @@ package nure.ua.alyona.stepanova.main.java;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * Created by User on 23.10.2016.
- */
 public class User {
 
     private Long id;
