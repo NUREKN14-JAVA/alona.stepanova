@@ -1,0 +1,30 @@
+<project name="usermanagement" basedir="." default="test">
+    <property name="main-java-dir" value="$(basedir)/src/nure.ua.hulko.daria/main/java"/>
+    <property name="test-java-dir" value="$(basedir)/src/nure.ua.hulko.daria/test/java"/>
+    <property name="build-dir" value="$(basedir)/bin"/>
+
+    <target name="clean">
+       <delete dir="$build-dir"/>
+    </target>
+    <target name="init">
+        <mkdir dir ="$(build-dir)"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="$(main-java-dir)" destdir="$(build-dir"/>
+    </target>
+
+    <target name="test-compile">
+        <javac srcdir="$(test-java-dir)" destdir="$(build-dir"/>
+    </target>
+    <target name="test" depends="test-compile">
+            <junit>
+                <classpath>
+                    <pathelement location="$(build-dir)">
+                    </pathelement>
+                </classpath>
+                <formatter type="plain"/>
+                <test name="nure.ua.hulko.daria.test.java.UserTest"></test>
+            </junit>
+    </target>
+</project>

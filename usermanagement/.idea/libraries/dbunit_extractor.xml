@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dbunit-extractor">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../lb2/dbunit-extractor.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
